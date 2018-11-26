@@ -1,0 +1,1 @@
+{"version":3,"file":"static/iframe.3713b887e557166609c4.bundle.js","sources":["webpack:///./stories/components/headline/description.js"],"sourcesContent":["export const index = `\n- h1\n- h2\n- h3\n- h4\n`;\n\nexport const icon = `\n- .c-headline__icon--circle\n- .c-headline__icon--square\n`;\n"],"mappings":"AAAA","sourceRoot":""}
