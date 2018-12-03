@@ -1,0 +1,23 @@
+include ../../component/index
+
+header.l-header header
+
+main
+  .l-main
+    section.p-articles
+      +sectionhead(config.sectionhead.icon.circle, {
+        text: '丸アイコン付き見出し'
+      })
+
+      +list(config.list.index.default, [{
+        text: 'リンクリスト1',
+        url: '//example.com#1'
+      }, {
+        text: 'リンクリスト2',
+        url: '//example.com#2'
+      }, {
+        text: 'リンクリスト3',
+        url: '//example.com#3'
+      }])
+
+footer.l-footer footer

@@ -1,0 +1,7 @@
+include ../../config
+
+mixin listitem(type, data)
+  case type
+    when config.listitem.index.link
+      li.c-listitem--link
+        a(href=`${data.url}`)= data.text

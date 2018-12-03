@@ -1,0 +1,10 @@
+include ../../config
+
+include ../listitem/mixin
+
+mixin list(type, data)
+  case type
+    when config.list.index.default
+      ul.c-list
+        each item in data
+          +listitem(config.listitem.index.link, item)

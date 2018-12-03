@@ -1,0 +1,33 @@
+include ../component/index
+
+doctype
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Document
+    link(rel="stylesheet", href="/css/style.css")
+    script(src='/js/index.bundle.js')
+  body
+    header.l-header header
+
+    main
+      .l-main
+        section.p-articles
+          +sectionhead(config.sectionhead.icon.circle, {
+            text: '丸アイコン付き見出し'
+          })
+
+          +list(config.list.index.default, [{
+            text: 'リンクリスト1',
+            url: '//example.com#1'
+          }, {
+            text: 'リンクリスト2',
+            url: '//example.com#2'
+          }, {
+            text: 'リンクリスト3',
+            url: '//example.com#3'
+          }])
+
+    footer.l-footer footer

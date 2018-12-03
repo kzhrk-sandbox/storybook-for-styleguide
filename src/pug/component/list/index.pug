@@ -1,0 +1,21 @@
+-
+  var items = [{
+    text: 'リンクリスト1',
+    url: '//example.com#1'
+  }, {
+    text: 'リンクリスト2',
+    url: '//example.com#2'
+  }]
+include ./mixin
+include ../listitem/mixin
+
++list(config.list.index.default, [{
+  text: 'リンクリスト1',
+  url: '//example.com#1'
+}, {
+  text: 'リンクリスト2',
+  url: '//example.com#2'
+}, {
+  text: 'リンクリスト3',
+  url: '//example.com#3'
+}])

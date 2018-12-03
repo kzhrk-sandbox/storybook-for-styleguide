@@ -1,0 +1,8 @@
+include ../../config
+
+mixin sectionhead(type, data)
+  case type
+    when config.sectionhead.icon.circle
+      h1.c-sectionhead__icon--circle= data.text
+    when config.sectionhead.icon.square
+      h1.c-sectionhead__icon--square= data.text

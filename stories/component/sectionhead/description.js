@@ -6,6 +6,6 @@ export const index = `
 `;
 
 export const icon = `
-- .c-headline__icon--circle
-- .c-headline__icon--square
+- .c-sectionhead__icon--circle
+- .c-sectionhead__icon--square
 `;

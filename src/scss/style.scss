@@ -11,6 +11,7 @@
 
 @import "layout/_footer";
 @import "layout/_header";
+@import "layout/_main";
 
 // ==========================================================================
 // Object
@@ -20,14 +21,16 @@
 // Component
 // -----------------------------------------------------------------
 
-@import "object/component/_headline";
+@import "object/component/_sectionhead";
 @import "object/component/_button";
+@import "object/component/_list";
+@import "object/component/_listitem";
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
 
-@import "object/project/_restaurant";
+@import "object/project/_articles";
 
 // -----------------------------------------------------------------
 // Utility

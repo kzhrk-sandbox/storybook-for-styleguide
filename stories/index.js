@@ -1,5 +1,5 @@
 import '../src/scss/style';
 
-import './components/headline';
-
-
+import './component/sectionhead';
+import './component/list';
+import './page/top'
