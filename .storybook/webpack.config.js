@@ -1,12 +1,12 @@
 const path = require('path');
 
-module.exports = (storybookBaseConfig, configType) => {
+module.exports = ({config, mode}) => {
 
-  storybookBaseConfig.resolve = {
+  config.resolve = {
     extensions: ['.js', '.scss', '.pug', '.md']
   };
 
-  storybookBaseConfig.module.rules.push({
+  config.module.rules.push({
     test: /\.scss$/,
     exclude: /node_modules/,
     use: [
@@ -16,7 +16,7 @@ module.exports = (storybookBaseConfig, configType) => {
     ]
   });
 
-  storybookBaseConfig.module.rules.push({
+  config.module.rules.push({
     test: /\.pug$/,
     exclude: /node_modules/,
     loader: 'pug-loader',
@@ -25,9 +25,9 @@ module.exports = (storybookBaseConfig, configType) => {
     }
   });
 
-  // storybookBaseConfig.entry.main = './src/js/index.js';
-  // storybookBaseConfig.output.path = path.resolve(__dirname, './public/js');
+  // config.entry.main = './src/js/index.js';
+  // config.output.path = path.resolve(__dirname, './public/js');
 
   // Return the altered config
-  return storybookBaseConfig;
+  return config;
 };
